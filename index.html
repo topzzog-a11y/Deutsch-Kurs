@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch Lernen - DW Inspired</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="bg-slider"></div>
+
+    <div id="app">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="nav-container">
+                <div class="logo" data-route="dashboard">
+                    <i class="ph-fill ph-student"></i>
+                    <span>DeutschLernen</span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li class="active" data-route="dashboard">
+                        <span>Start</span>
+                    </li>
+                    <li data-route="grammar-levels">
+                        <span>Kurse (Courses)</span>
+                    </li>
+                    <li data-route="verbs">
+                        <span>Verben (Verbs)</span>
+                    </li>
+                    <li data-route="flashcards">
+                        <span>Vokabeln (Vocabulary)</span>
+                    </li>
+                    <li data-route="magazines">
+                        <span>Magazin (News)</span>
+                    </li>
+                    <li data-route="library">
+                        <span>Bibliothek (Library)</span>
+                    </li>
+                </ul>
+
+                <div class="user-profile">
+                    <span class="xp-badge" id="nav-xp">0 XP</span>
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User Avatar" class="avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- Content will be dynamically injected here by JS -->
+        </main>
+    </div>
+
+    <script src="verbs_data.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
